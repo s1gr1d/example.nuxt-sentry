@@ -1,9 +1,10 @@
 import * as Sentry from "@sentry/nuxt";
+import { useRuntimeConfig } from "#imports";
 
 console.log("SENTRY INIT");
 
 Sentry.init({
-  dsn: "https://e88b32b2db8229c9b7b693337bd60a12@o447951.ingest.us.sentry.io/4507486945738752",
+  dsn: useRuntimeConfig().public.sentry.dsn,
   debug: true,
   tracesSampleRate: 1,
   beforeSendTransaction(transaction) {
@@ -12,4 +13,3 @@ Sentry.init({
   },
   release: "my-project-name@2.3.12",
 });
-
