@@ -6,7 +6,7 @@
     "build": "nuxi build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "NODE_OPTIONS='--import ./public/instrument-sentry.mjs' nuxt preview",
+    "preview": "NODE_OPTIONS='--import ./public/instrument.server.mjs' nuxt preview",
     "start": "node .output/server/index.mjs",
     "postinstall": "nuxt prepare",
     "clean": "npx nuxi cleanup",
