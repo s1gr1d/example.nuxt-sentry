@@ -1,0 +1,6 @@
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+
+[functions]
+  included_files = [".output/server/sentry.server.config.mjs"]
