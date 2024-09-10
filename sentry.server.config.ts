@@ -1,15 +1,14 @@
-/*
 import * as Sentry from "@sentry/nuxt";
+import dotenv from "dotenv";
 
-if (process.env.SENTRY_DSN) {
-  Sentry.init({
-    dsn: process.env.SENTRY_DSN,
-    tracesSampleRate: 1,
-    debug: true,
-    beforeSendTransaction(transaction) {
-      console.log("transaction (server): ", transaction.transaction);
-      return transaction;
-    },
-  });
-}
-*/
+dotenv.config();
+
+Sentry.init({
+  dsn: process.env.SENTRY_DSN,
+  tracesSampleRate: 1,
+  debug: true,
+  beforeSendTransaction(transaction) {
+    console.log("transaction (server): ", transaction.transaction);
+    return transaction;
+  },
+});
