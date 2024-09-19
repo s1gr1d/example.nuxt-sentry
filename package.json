@@ -4,6 +4,13 @@
   "type": "module",
   "scripts": {
     "build": "nuxi build",
+    "build:amplify": "nuxt build --preset aws_amplify",
+    "build:azure": "nuxt build --preset azure",
+    "build:cloudflare": "nuxt build --preset cloudflare_pages",
+    "build:netlify": "nuxt build --preset netlify",
+    "build:stormkit": "nuxt build --preset stormkit",
+    "build:vercel": "nuxt build --preset vercel",
+    "build:zeabur": "nuxt build --preset zeabur",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
