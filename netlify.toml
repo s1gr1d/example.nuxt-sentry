@@ -3,4 +3,4 @@
   publish = "dist"
 
 [functions]
-  included_files = [".output/server/sentry.server.config.mjs"]
+  included_files = ["node_modules/import-in-the-middle/hook.mjs"]
