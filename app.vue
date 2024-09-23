@@ -4,7 +4,7 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink to="/fetch-server-error">Fetch Server Error</NuxtLink>
+            <NuxtLink to="/fetch-server-routes">Fetch Server Routes</NuxtLink>
           </li>
           <li><NuxtLink to="/fetch-quote">Fetch Quote</NuxtLink></li>
           <li><NuxtLink to="/test-param/1234">Test Param</NuxtLink></li>

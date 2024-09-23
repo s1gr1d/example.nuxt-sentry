@@ -20,7 +20,7 @@
     "format": "yarn prettier . --write"
   },
   "dependencies": {
-    "@sentry/nuxt": "8.30.0",
+    "@sentry/nuxt": "8.31.0",
     "dotenv": "^16.4.5",
     "nuxt": "^3.12.2"
   },

@@ -8,7 +8,7 @@ Sentry.init({
   tracesSampleRate: 1,
   debug: true,
   beforeSendTransaction(transaction) {
-    console.log("transaction (server): ", transaction.transaction);
+    console.log("transaction (server): ", transaction.contexts);
     return transaction;
   },
 });

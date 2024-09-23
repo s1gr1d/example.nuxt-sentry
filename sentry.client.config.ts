@@ -12,4 +12,5 @@ Sentry.init({
     return transaction;
   },
   release: "my-project-name@2.3.12",
+  trackComponents: false,
 });
