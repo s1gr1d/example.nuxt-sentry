@@ -11,14 +11,14 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       sentry: {
-        dsn: "https://e88b32b2db8229c9b7b693337bd60a12@o447951.ingest.us.sentry.io/4507486945738752",
+        dsn: process.env.SENTRY_DSN,
       },
     },
   },
 
   sentry: {
     debug: true,
-    // experimental_basicServerTracing: true,
+    experimental_basicServerTracing: true,
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
       project: "javascript-nuxt",
