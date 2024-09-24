@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   sentry: {
     debug: true,
-    experimental_basicServerTracing: true,
+    // experimental_basicServerTracing: true,
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
       project: "javascript-nuxt",
