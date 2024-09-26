@@ -3,4 +3,4 @@
   publish = "dist"
 
 [functions]
-  included_files = ["./.netlify/functions/server/sentry.server.config.mjs", "./.netlify/functions/server/node_modules/import-in-the-middle/*.mjs"]
+  included_files = []
