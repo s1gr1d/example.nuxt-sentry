@@ -14,13 +14,21 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "start": "node --import ./.output/server/sentry.server.config.mjs .output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
+    "start:import": "node --import ./.output/server/sentry.server.config.mjs .output/server/index.mjs",
     "postinstall": "nuxt prepare",
     "clean": "npx nuxi cleanup",
     "format": "yarn prettier . --write"
   },
   "dependencies": {
-    "@sentry/nuxt": "8.31.0",
+    "@sentry/browser": "file:.yalc/@sentry/browser",
+    "@sentry/core": "file:.yalc/@sentry/core",
+    "@sentry/node": "file:.yalc/@sentry/node",
+    "@sentry/nuxt": "file:.yalc/@sentry/nuxt",
+    "@sentry/opentelemetry": "file:.yalc/@sentry/opentelemetry",
+    "@sentry/types": "file:.yalc/@sentry/types",
+    "@sentry/utils": "file:.yalc/@sentry/utils",
+    "@sentry/vue": "file:.yalc/@sentry/vue",
     "dotenv": "^16.4.5",
     "nuxt": "^3.12.2"
   },
@@ -28,7 +36,8 @@
     "prettier": "3.3.3"
   },
   "resolutions": {
-    "@vercel/nft": "^0.27.4"
+    "@vercel/nft": "^0.27.4",
+    "ofetch": "^1.4.0"
   },
   "// yalc deps (for testing)": {
     "@sentry/browser": "file:.yalc/@sentry/browser",

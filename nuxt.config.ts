@@ -1,12 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // debug: true,
+  debug: true,
 
-  modules: ["@sentry/nuxt/module"],
+  future: { compatibilityVersion: 4 },
+  compatibilityDate: "2024-04-03",
 
-  imports: {
-    autoImport: false,
-  },
+  imports: { autoImport: false },
 
   runtimeConfig: {
     public: {
@@ -16,9 +15,11 @@ export default defineNuxtConfig({
     },
   },
 
+  modules: ["@sentry/nuxt/module"],
+
   sentry: {
     debug: true,
-    // experimental_basicServerTracing: true,
+    experimental_basicServerTracing: true,
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
       project: "javascript-nuxt",
@@ -26,21 +27,4 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-
-  /*
-    vite: {
-    plugins: [
-      {
-        name: "foobar",
-        transform: (code, chunk) => {
-          console.log("id", chunk);
-          if (chunk.includes("entry.js")) {
-            console.log("code:", code);
-          }
-          return code;
-        },
-      },
-    ],
-  },
-   */
 });
