@@ -3,5 +3,5 @@
   publish = "dist"
 
 [functions]
-  included_files = []
+  included_files = ["./.netlify/functions/server/sentry.server.config.mjs"]
   node_bundler = "nft"

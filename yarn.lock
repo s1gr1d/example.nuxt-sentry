@@ -1338,6 +1338,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@opentelemetry/instrumentation-amqplib@npm:^0.42.0":
+  version: 0.42.0
+  resolution: "@opentelemetry/instrumentation-amqplib@npm:0.42.0"
+  dependencies:
+    "@opentelemetry/core": "npm:^1.8.0"
+    "@opentelemetry/instrumentation": "npm:^0.53.0"
+    "@opentelemetry/semantic-conventions": "npm:^1.27.0"
+  peerDependencies:
+    "@opentelemetry/api": ^1.3.0
+  checksum: 10c0/bdbcce51161f026ed7d57ae8694738655d1c1f1c1308570d28d85c6d42ed1cffedf2dac8dac0ab00a3fa820908525171086a265d5c366cd4a372517d87fbdff5
+  languageName: node
+  linkType: hard
+
 "@opentelemetry/instrumentation-connect@npm:0.39.0":
   version: 0.39.0
   resolution: "@opentelemetry/instrumentation-connect@npm:0.39.0"
@@ -1485,6 +1498,17 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ^1.3.0
   checksum: 10c0/d9596de9915ced84d8db2f244376420700dbb2731e044cd2091f8b32938a732e41525e50f9fa32cb95dc2f4fd560bb9a327061a44a993db034dd89a7d2e0495b
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/instrumentation-lru-memoizer@npm:0.40.0":
+  version: 0.40.0
+  resolution: "@opentelemetry/instrumentation-lru-memoizer@npm:0.40.0"
+  dependencies:
+    "@opentelemetry/instrumentation": "npm:^0.53.0"
+  peerDependencies:
+    "@opentelemetry/api": ^1.3.0
+  checksum: 10c0/2832a1668e237b8690405a7961a9a27fa99fe06f587daf13d516349805f8dcd9e0eacfd41ec45abdfaa7e79ca6e799387cdc33585b1ae7d16f80f2db1bb5b30d
   languageName: node
   linkType: hard
 
@@ -2140,49 +2164,95 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry-internal/browser-utils@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry-internal/browser-utils@npm:8.31.0"
+"@sentry-internal/browser-utils@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry-internal/browser-utils@npm:8.32.0"
   dependencies:
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
-  checksum: 10c0/2eb003e0a45733254905cac4a75fd06cc6bc8b0e18cfec8d8ce6b6843f6817ecb6a5eb3e3977513e829f439e152bc6f294e52b3d0d5a41a606eef261c8fb90d6
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/accaf5af1c44761e1bcceedd4b91c1707fcc082081378c987a2b375407d175c9542d255bb29613d87bc3b288be2d967ff2d690193f610bec79bbcc708b51b911
   languageName: node
   linkType: hard
 
-"@sentry-internal/feedback@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry-internal/feedback@npm:8.31.0"
+"@sentry-internal/browser-utils@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry-internal/browser-utils@npm:8.33.0"
   dependencies:
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
-  checksum: 10c0/46301899d453de4beddc8be261f29c5670dc7a1bfeedd32039c9583b0b7ff27a0bb3563b01b1a890c2fc1684214fdacf11f7707711f06b87393e8427ba03e94a
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  checksum: 10c0/802b76941faa710d17740822b9e39dfe3bd424b20d0c5ea13782b7a788c4853aba3efa7bff27fc726da3a7a863d85fc87a071a7fe6d371f0152c0999170a67ee
   languageName: node
   linkType: hard
 
-"@sentry-internal/replay-canvas@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry-internal/replay-canvas@npm:8.31.0"
+"@sentry-internal/feedback@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry-internal/feedback@npm:8.32.0"
   dependencies:
-    "@sentry-internal/replay": "npm:8.31.0"
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
-  checksum: 10c0/57b82b83de38253c1958c43ea35a950f2fe77ecb779f7fb3eac4df5d36b4b240a8919d93d9ac8db7b476f2c0f56079ca737de74b0c9f6f72ae5beb8c2a53460e
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/8b2191230d8bb2ff42696ef4e1266e76c70966b0cd74802cc754623c970a5c7b03458fa4ef0a758435236061a61566c4ff1e65a06afdb173887948278eb6f383
   languageName: node
   linkType: hard
 
-"@sentry-internal/replay@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry-internal/replay@npm:8.31.0"
+"@sentry-internal/feedback@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry-internal/feedback@npm:8.33.0"
   dependencies:
-    "@sentry-internal/browser-utils": "npm:8.31.0"
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
-  checksum: 10c0/d85e83445a46a5436f992ddc5abe26a27d9e7747539a3b4a955ad06d286448da51c7cfc618d9eced3e95e1af41ea36de37e14ab9363d0f62449a72534d371cbc
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  checksum: 10c0/92859e325d0d80007c0ec0577c8ab72aed2087a85bcfac132818381092a08b48c5dd7da92cdb0fd04099073672f8a66d909a7cf655c30854efe83ca31b13f822
+  languageName: node
+  linkType: hard
+
+"@sentry-internal/replay-canvas@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry-internal/replay-canvas@npm:8.32.0"
+  dependencies:
+    "@sentry-internal/replay": "npm:8.32.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/2974fa21fcd8947c7cedb265419273eec9bf31b331c0309c4eccdc43563882b6f098e93481e21908fea5d712138a6115aff93bf900f4a27c3f4b512c880a4964
+  languageName: node
+  linkType: hard
+
+"@sentry-internal/replay-canvas@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry-internal/replay-canvas@npm:8.33.0"
+  dependencies:
+    "@sentry-internal/replay": "npm:8.33.0"
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  checksum: 10c0/9e413015b2005f817a473bef20e8091070a13bd2ccf966e9c50665f8e5f0790752aa988ca9a9ea3866027acb525010a92df09a5d90d02fa790c7f7c796122097
+  languageName: node
+  linkType: hard
+
+"@sentry-internal/replay@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry-internal/replay@npm:8.32.0"
+  dependencies:
+    "@sentry-internal/browser-utils": "npm:8.32.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/2278920e42b939588ce2d4b70c1a14f85ab3e03ba3e141acd89060df02c5794c560b132cad0d47f8d1a3ac2e62e6b14a7d7deacc4d5c038ac2851cc7b2346849
+  languageName: node
+  linkType: hard
+
+"@sentry-internal/replay@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry-internal/replay@npm:8.33.0"
+  dependencies:
+    "@sentry-internal/browser-utils": "npm:8.33.0"
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  checksum: 10c0/f6de59a633640d42a6ed586876c4bf6226450610fb3b6b56d3dce867fc324889b6c4a22e67bb0ab3166c9eeb242912efc7b9dc9b4f8d7246c8844d86583ae25b
   languageName: node
   linkType: hard
 
@@ -2193,18 +2263,48 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/browser@npm:8.31.0"
+"@sentry/browser@file:.yalc/@sentry/browser::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+f91aa324
+  resolution: "@sentry/browser@file:.yalc/@sentry/browser#.yalc/@sentry/browser::hash=b248b7&locator=nuxt-app%40workspace%3A."
   dependencies:
-    "@sentry-internal/browser-utils": "npm:8.31.0"
-    "@sentry-internal/feedback": "npm:8.31.0"
-    "@sentry-internal/replay": "npm:8.31.0"
-    "@sentry-internal/replay-canvas": "npm:8.31.0"
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
-  checksum: 10c0/b0f1e69163f1876b9957cf24716e7bc8061bdcd3feb2b686d2a162a8707ac787ff0ecbe0b41c4fc5c6ff5ff70baa5a3ed844f22903228667e3dff77bb3368211
+    "@sentry-internal/browser-utils": "npm:8.32.0"
+    "@sentry-internal/feedback": "npm:8.32.0"
+    "@sentry-internal/replay": "npm:8.32.0"
+    "@sentry-internal/replay-canvas": "npm:8.32.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/8ad4c8fce0c6e9448e1ea295297ba147f779ce2945f2ae851108760e8d0b7630ac8bfb088470358a034864b2af304d3d8aebbc68b513c66916fee5b076676416
+  languageName: node
+  linkType: hard
+
+"@sentry/browser@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry/browser@npm:8.32.0"
+  dependencies:
+    "@sentry-internal/browser-utils": "npm:8.32.0"
+    "@sentry-internal/feedback": "npm:8.32.0"
+    "@sentry-internal/replay": "npm:8.32.0"
+    "@sentry-internal/replay-canvas": "npm:8.32.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/21990eb0857dd77ab76ea162dbf532af611ff8b16a6ae7dd9d51ecb31092a0a6d385bcb237d727f5ca7f913a9763f1ca83cbf3b0f224f7e518cb6a053e9a46af
+  languageName: node
+  linkType: hard
+
+"@sentry/browser@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/browser@npm:8.33.0"
+  dependencies:
+    "@sentry-internal/browser-utils": "npm:8.33.0"
+    "@sentry-internal/feedback": "npm:8.33.0"
+    "@sentry-internal/replay": "npm:8.33.0"
+    "@sentry-internal/replay-canvas": "npm:8.33.0"
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  checksum: 10c0/13c4ba7e40e2438bcdfaca56bdea5dc670c63ce13e2c2fb7bb39b6c68d5cfbba0f208b7bcf8e8c1e7941cd18f1831ca44fadc3662c4d4993512acb84c749c38c
   languageName: node
   linkType: hard
 
@@ -2310,24 +2410,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/core@npm:8.31.0"
+"@sentry/core@file:.yalc/@sentry/core::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+b2c6bc50
+  resolution: "@sentry/core@file:.yalc/@sentry/core#.yalc/@sentry/core::hash=f6e054&locator=nuxt-app%40workspace%3A."
   dependencies:
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
-  checksum: 10c0/54091d050a95800ec03558c23949b44e59ba5f5628a2886a5e636cfb117983c2eb8f9c93eb5771108850a9b0dead1bdfe06262ce0ccfcbe3bbcd3d2326874f03
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/f439cf6f74e366845b02e101d38c5a07c261b08f531b280c229eba5bfeb08de643c23efbea39c7438668ba806d8db1f5e9a77a89255d009c579ed78734c8c092
   languageName: node
   linkType: hard
 
-"@sentry/node@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/node@npm:8.31.0"
+"@sentry/core@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry/core@npm:8.32.0"
+  dependencies:
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  checksum: 10c0/11de3a4810c9f33548577356afda93081daf925663dd01c89778f82f5e74a7c46dc4b84f2983291c91ba8d040b01ad0b881b627ddcff2fc5e5354dfe66ff0cdb
+  languageName: node
+  linkType: hard
+
+"@sentry/core@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/core@npm:8.33.0"
+  dependencies:
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  checksum: 10c0/1121e73afbc066ec1c52b6476b265204c4b29913971e27432797752a466b677c54a033f2833b2ce70a87279cfdfd86c890d6e1f18a0028a8ff20b77e5ce16dfb
+  languageName: node
+  linkType: hard
+
+"@sentry/node@file:.yalc/@sentry/node::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+08258955
+  resolution: "@sentry/node@file:.yalc/@sentry/node#.yalc/@sentry/node::hash=b401c5&locator=nuxt-app%40workspace%3A."
   dependencies:
     "@opentelemetry/api": "npm:^1.9.0"
     "@opentelemetry/context-async-hooks": "npm:^1.25.1"
     "@opentelemetry/core": "npm:^1.25.1"
     "@opentelemetry/instrumentation": "npm:^0.53.0"
+    "@opentelemetry/instrumentation-amqplib": "npm:^0.42.0"
     "@opentelemetry/instrumentation-connect": "npm:0.39.0"
     "@opentelemetry/instrumentation-dataloader": "npm:0.12.0"
     "@opentelemetry/instrumentation-express": "npm:0.42.0"
@@ -2340,6 +2461,7 @@ __metadata:
     "@opentelemetry/instrumentation-ioredis": "npm:0.43.0"
     "@opentelemetry/instrumentation-kafkajs": "npm:0.3.0"
     "@opentelemetry/instrumentation-koa": "npm:0.43.0"
+    "@opentelemetry/instrumentation-lru-memoizer": "npm:0.40.0"
     "@opentelemetry/instrumentation-mongodb": "npm:0.47.0"
     "@opentelemetry/instrumentation-mongoose": "npm:0.42.0"
     "@opentelemetry/instrumentation-mysql": "npm:0.41.0"
@@ -2352,49 +2474,126 @@ __metadata:
     "@opentelemetry/sdk-trace-base": "npm:^1.26.0"
     "@opentelemetry/semantic-conventions": "npm:^1.27.0"
     "@prisma/instrumentation": "npm:5.19.1"
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/opentelemetry": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/opentelemetry": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
     import-in-the-middle: "npm:^1.11.0"
-  checksum: 10c0/f57e29fc23a105e7d998d10785c337bab6a362208ebb454e88fdab73a7517a343dc2b7f5c070e7e9b438fa1450205b96e599b6d1dfd924ac88c0fc818fc04ca3
+  checksum: 10c0/243207d4f36487909941ad1aa3e01e157607b1bdc3bf39a2d65de9cb7548f4a97feca7f90f3582c1881ba2112e1c924cf24d6b21bf1990042d93615ca2cca2ee
   languageName: node
   linkType: hard
 
-"@sentry/nuxt@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/nuxt@npm:8.31.0"
+"@sentry/node@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/node@npm:8.33.0"
+  dependencies:
+    "@opentelemetry/api": "npm:^1.9.0"
+    "@opentelemetry/context-async-hooks": "npm:^1.25.1"
+    "@opentelemetry/core": "npm:^1.25.1"
+    "@opentelemetry/instrumentation": "npm:^0.53.0"
+    "@opentelemetry/instrumentation-amqplib": "npm:^0.42.0"
+    "@opentelemetry/instrumentation-connect": "npm:0.39.0"
+    "@opentelemetry/instrumentation-dataloader": "npm:0.12.0"
+    "@opentelemetry/instrumentation-express": "npm:0.42.0"
+    "@opentelemetry/instrumentation-fastify": "npm:0.39.0"
+    "@opentelemetry/instrumentation-fs": "npm:0.15.0"
+    "@opentelemetry/instrumentation-generic-pool": "npm:0.39.0"
+    "@opentelemetry/instrumentation-graphql": "npm:0.43.0"
+    "@opentelemetry/instrumentation-hapi": "npm:0.41.0"
+    "@opentelemetry/instrumentation-http": "npm:0.53.0"
+    "@opentelemetry/instrumentation-ioredis": "npm:0.43.0"
+    "@opentelemetry/instrumentation-kafkajs": "npm:0.3.0"
+    "@opentelemetry/instrumentation-koa": "npm:0.43.0"
+    "@opentelemetry/instrumentation-lru-memoizer": "npm:0.40.0"
+    "@opentelemetry/instrumentation-mongodb": "npm:0.47.0"
+    "@opentelemetry/instrumentation-mongoose": "npm:0.42.0"
+    "@opentelemetry/instrumentation-mysql": "npm:0.41.0"
+    "@opentelemetry/instrumentation-mysql2": "npm:0.41.0"
+    "@opentelemetry/instrumentation-nestjs-core": "npm:0.40.0"
+    "@opentelemetry/instrumentation-pg": "npm:0.44.0"
+    "@opentelemetry/instrumentation-redis-4": "npm:0.42.0"
+    "@opentelemetry/instrumentation-undici": "npm:0.6.0"
+    "@opentelemetry/resources": "npm:^1.26.0"
+    "@opentelemetry/sdk-trace-base": "npm:^1.26.0"
+    "@opentelemetry/semantic-conventions": "npm:^1.27.0"
+    "@prisma/instrumentation": "npm:5.19.1"
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/opentelemetry": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+    import-in-the-middle: "npm:^1.11.0"
+  checksum: 10c0/d431c04baa491c3a1b8cf522110e1518c908b4eef92734b18914b3702a77d8e9a16a3b6954206dcb0c30cfa279d1f674323be3acd617f1fa8977a76b0524861c
+  languageName: node
+  linkType: hard
+
+"@sentry/nuxt@npm:^8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/nuxt@npm:8.33.0"
   dependencies:
     "@nuxt/kit": "npm:^3.12.2"
-    "@sentry/browser": "npm:8.31.0"
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/node": "npm:8.31.0"
-    "@sentry/opentelemetry": "npm:8.31.0"
+    "@sentry/browser": "npm:8.33.0"
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/node": "npm:8.33.0"
+    "@sentry/opentelemetry": "npm:8.33.0"
     "@sentry/rollup-plugin": "npm:2.22.3"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
     "@sentry/vite-plugin": "npm:2.22.3"
-    "@sentry/vue": "npm:8.31.0"
+    "@sentry/vue": "npm:8.33.0"
   peerDependencies:
     nuxt: 3.x
-  checksum: 10c0/cd4d56044b249f496afdeb44a03fba967c058423308f7f99d90cdd14e407c4d2cdcdbd06ba7066c40ea75a3346f72be0558ac5c80d6d8865fa4db54ae310eae0
+  checksum: 10c0/3112fe3c1269f6f09a549fc9ab9fac2376962c5356f5399b8bcd702dbdc6317fbfb37a20ad3627511d6f76f8c5ac163050657ba159a6c0990f51846c212eb5d0
   languageName: node
   linkType: hard
 
-"@sentry/opentelemetry@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/opentelemetry@npm:8.31.0"
+"@sentry/opentelemetry@file:.yalc/@sentry/opentelemetry::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+8ffde88e
+  resolution: "@sentry/opentelemetry@file:.yalc/@sentry/opentelemetry#.yalc/@sentry/opentelemetry::hash=95fe0b&locator=nuxt-app%40workspace%3A."
   dependencies:
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
   peerDependencies:
     "@opentelemetry/api": ^1.9.0
     "@opentelemetry/core": ^1.25.1
     "@opentelemetry/instrumentation": ^0.53.0
     "@opentelemetry/sdk-trace-base": ^1.26.0
     "@opentelemetry/semantic-conventions": ^1.27.0
-  checksum: 10c0/3e6bc67947cefeda104d258e81df6554621bfd3d35d1ee986f372431af20945993f75487f79ca658e19e7071b55dd58d46fc543ba538e853ac2095fb32f737ed
+  checksum: 10c0/3f24d692001339ca4289019ba4e47e8b999ab5c05ed503e6b913fbe87b8a64dee006a2d1323b86abfed1965e5790a2db200da2c80e819a9a72d37f27db83f0cc
+  languageName: node
+  linkType: hard
+
+"@sentry/opentelemetry@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry/opentelemetry@npm:8.32.0"
+  dependencies:
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
+  peerDependencies:
+    "@opentelemetry/api": ^1.9.0
+    "@opentelemetry/core": ^1.25.1
+    "@opentelemetry/instrumentation": ^0.53.0
+    "@opentelemetry/sdk-trace-base": ^1.26.0
+    "@opentelemetry/semantic-conventions": ^1.27.0
+  checksum: 10c0/9244db3a4febe063062f4bf3f7f136a79d2060976a620e3afd35f5d27c45baef47f464b79dbcd68b75492c87529a1919b8e97a7e7549decc5fa41723470b982f
+  languageName: node
+  linkType: hard
+
+"@sentry/opentelemetry@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/opentelemetry@npm:8.33.0"
+  dependencies:
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  peerDependencies:
+    "@opentelemetry/api": ^1.9.0
+    "@opentelemetry/core": ^1.25.1
+    "@opentelemetry/instrumentation": ^0.53.0
+    "@opentelemetry/sdk-trace-base": ^1.26.0
+    "@opentelemetry/semantic-conventions": ^1.27.0
+  checksum: 10c0/ed7b7affe15b2c918499632c066d70c81fdebe69a442c2ea9ec29ed826fd022e30ca15ab5499c36df2330ac010f94df12dd505d97a0671d0feb534b6d2697a4e
   languageName: node
   linkType: hard
 
@@ -2410,19 +2609,51 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/types@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/types@npm:8.31.0"
-  checksum: 10c0/73cd2bc3f7dc8f13a72867eaf5aedb678994e99fd8939bc3e190bb46e637feddf4969d68adcea86a3a57dced90aad04ec97857dd232f67fc447c036d78e112b2
+"@sentry/types@file:.yalc/@sentry/types::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+d2a8782f
+  resolution: "@sentry/types@file:.yalc/@sentry/types#.yalc/@sentry/types::hash=27e9d1&locator=nuxt-app%40workspace%3A."
+  checksum: 10c0/2c2cb63484b85b43cbea3b97b1cf6923ed41b62941642b372f5bed7d829609b7937f583eca6f0df19728e35ec7c315b474a7dc7c8f07bc68cc278209e4665457
   languageName: node
   linkType: hard
 
-"@sentry/utils@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/utils@npm:8.31.0"
+"@sentry/types@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry/types@npm:8.32.0"
+  checksum: 10c0/386f5c8fa126c5ce8adf7740b1203b9833a78dcc23ebbe43a5e48a76093779596d35c4e58564d32b3a358a81e696f31706c870fa7ce43d3616018bb6b25c872a
+  languageName: node
+  linkType: hard
+
+"@sentry/types@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/types@npm:8.33.0"
+  checksum: 10c0/dba9a3c1c74fb3dfda64d3bdc5b1772063359fb1ffc2539da67ffa148c31c64f9b7d50113d60dfd0aacd8594c900f34edc47821be1f4efbdaa308f0125dd7d2e
+  languageName: node
+  linkType: hard
+
+"@sentry/utils@file:.yalc/@sentry/utils::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+3e8637d3
+  resolution: "@sentry/utils@file:.yalc/@sentry/utils#.yalc/@sentry/utils::hash=84413a&locator=nuxt-app%40workspace%3A."
   dependencies:
-    "@sentry/types": "npm:8.31.0"
-  checksum: 10c0/f27ccee9a511ce668ac79f7556ab12f0f0683973cd87972fbf90af36983c63ee762ab8a0e7cd19dadf045375362097da1d61027f8b9f7834493251a9e887bd59
+    "@sentry/types": "npm:8.32.0"
+  checksum: 10c0/5588846646b5e00866191cf40205f6ff670b75fa9d6c88362fa8df2459fe1a240a1434ac4bcfd2b1f28b6a6dd36fda2c7bb2baf5d31c77951f5f30f6694e6c74
+  languageName: node
+  linkType: hard
+
+"@sentry/utils@npm:8.32.0":
+  version: 8.32.0
+  resolution: "@sentry/utils@npm:8.32.0"
+  dependencies:
+    "@sentry/types": "npm:8.32.0"
+  checksum: 10c0/cfff34eaa411dd913861d1734f02111aaebbf8d7078a0e1931a3c3ed06f332abbcbe4ec0022505c625ee296b28692f4ae5cee1c66d592ddf87fd798784d5382a
+  languageName: node
+  linkType: hard
+
+"@sentry/utils@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/utils@npm:8.33.0"
+  dependencies:
+    "@sentry/types": "npm:8.33.0"
+  checksum: 10c0/70051187adc969f7a92f1f54212363e2d9f0dcdd6dfa08c72e1000623dd7ecaeb6dfa383fc27a0d0dec618725518c3725562a61191d8d47604a3defc410a5c9a
   languageName: node
   linkType: hard
 
@@ -2436,17 +2667,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/vue@npm:8.31.0":
-  version: 8.31.0
-  resolution: "@sentry/vue@npm:8.31.0"
+"@sentry/vue@file:.yalc/@sentry/vue::locator=nuxt-app%40workspace%3A.":
+  version: 8.32.0+911181c2
+  resolution: "@sentry/vue@file:.yalc/@sentry/vue#.yalc/@sentry/vue::hash=50596d&locator=nuxt-app%40workspace%3A."
   dependencies:
-    "@sentry/browser": "npm:8.31.0"
-    "@sentry/core": "npm:8.31.0"
-    "@sentry/types": "npm:8.31.0"
-    "@sentry/utils": "npm:8.31.0"
+    "@sentry/browser": "npm:8.32.0"
+    "@sentry/core": "npm:8.32.0"
+    "@sentry/types": "npm:8.32.0"
+    "@sentry/utils": "npm:8.32.0"
   peerDependencies:
     vue: 2.x || 3.x
-  checksum: 10c0/6232f96d5216164cdb5c026692c89fe2c943a33df71ad31e0bdf763f3098af29e1a14918cc476734e55d2f27f0e95b12256db76eab222c245105af846324f48c
+  checksum: 10c0/669e2270eec8033017f30b69991761f82db34b4df8ee460f83df03e873474001c78275eecd91651c0feac0512524a306d77193b6eb2a0e7679b9711f612f9f4a
+  languageName: node
+  linkType: hard
+
+"@sentry/vue@npm:8.33.0":
+  version: 8.33.0
+  resolution: "@sentry/vue@npm:8.33.0"
+  dependencies:
+    "@sentry/browser": "npm:8.33.0"
+    "@sentry/core": "npm:8.33.0"
+    "@sentry/types": "npm:8.33.0"
+    "@sentry/utils": "npm:8.33.0"
+  peerDependencies:
+    vue: 2.x || 3.x
+  checksum: 10c0/0441f277683fb9bf33422ae9e5126f0b8f838b897cad3839a4b98309e60ba7fdcd92e7e9cb2ec499288c95a0c0319f80ee69f40bb48e902809604e1fa142e8ea
   languageName: node
   linkType: hard
 
@@ -6191,7 +6436,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-app@workspace:."
   dependencies:
-    "@sentry/nuxt": "npm:8.31.0"
+    "@sentry/browser": "file:.yalc/@sentry/browser"
+    "@sentry/core": "file:.yalc/@sentry/core"
+    "@sentry/node": "file:.yalc/@sentry/node"
+    "@sentry/nuxt": "npm:^8.33.0"
+    "@sentry/opentelemetry": "file:.yalc/@sentry/opentelemetry"
+    "@sentry/types": "file:.yalc/@sentry/types"
+    "@sentry/utils": "file:.yalc/@sentry/utils"
+    "@sentry/vue": "file:.yalc/@sentry/vue"
     dotenv: "npm:^16.4.5"
     nuxt: "npm:^3.12.2"
     prettier: "npm:3.3.3"
@@ -6306,14 +6558,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ofetch@npm:^1.3.3, ofetch@npm:^1.3.4":
-  version: 1.3.4
-  resolution: "ofetch@npm:1.3.4"
+"ofetch@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "ofetch@npm:1.4.0"
   dependencies:
     destr: "npm:^2.0.3"
-    node-fetch-native: "npm:^1.6.3"
-    ufo: "npm:^1.5.3"
-  checksum: 10c0/39855005c3f8aa11c11d3a3b0c4366b67d316da58633f4cf5d4a5af0a61495fd68699f355e70deda70355ead25f27b41c3bde2fdd1d24ce3f85ac79608dd8677
+    node-fetch-native: "npm:^1.6.4"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/8825bfd1e87117aba462c1e654ba37e09415e6161527a9ef20723ec220b5cd802b52b07a042f6582746240c65bd5fa6fefb289ea5c6d6ea987d2beca3cc0d2f9
   languageName: node
   linkType: hard
 
