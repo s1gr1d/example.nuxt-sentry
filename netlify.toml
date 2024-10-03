@@ -3,8 +3,5 @@
   publish = "dist"
 
 [functions]
-  included_files = ["./.netlify/functions/server/sentry.server.config.mjs"]
+  included_files = ["./sentry.server.config.ts"]
   node_bundler = "nft"
-
-[[plugins]]
-package = "/netlify-plugin-print-build"
