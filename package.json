@@ -7,6 +7,7 @@
     "build:amplify": "nuxt build --preset aws_amplify",
     "build:azure": "nuxt build --preset azure",
     "build:cloudflare": "nuxt build --preset cloudflare_pages",
+    "build:firebase": "nuxt build --preset firebase",
     "build:netlify": "nuxt build --preset netlify",
     "build:stormkit": "nuxt build --preset stormkit",
     "build:vercel": "nuxt build --preset vercel",
@@ -21,8 +22,9 @@
     "format": "yarn prettier . --write"
   },
   "dependencies": {
-    "@sentry/nuxt": "8.32.0",
-    "@sentry/nuxt": "^8.33.0",
+    "@nuxt/content": "^2.13.4",
+    "@pinia/nuxt": "^0.7.0",
+    "@sentry/nuxt": "8.37.0",
     "dotenv": "^16.4.5",
     "nuxt": "^3.12.2"
   },

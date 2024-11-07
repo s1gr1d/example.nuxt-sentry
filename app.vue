@@ -18,6 +18,7 @@
         </ul>
       </nav>
     </header>
+    <ContentDoc path="/document" />
     <NuxtPage />
   </NuxtLayout>
 </template>

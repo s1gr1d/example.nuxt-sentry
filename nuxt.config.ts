@@ -15,11 +15,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@sentry/nuxt/module"],
+  sourcemap: { client: true },
+
+  modules: ["@sentry/nuxt/module", "@pinia/nuxt", "@nuxt/content"],
 
   sentry: {
     debug: true,
-    experimental_basicServerTracing: true,
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
       project: "javascript-nuxt",
