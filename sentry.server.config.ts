@@ -7,7 +7,7 @@ Sentry.init({
   dsn: process.env.SENTRY_DSN,
   tracesSampleRate: 1,
   debug: true,
-  beforeSendTransaction(transaction) {
+  beforeSendTransaction(transaction: any) {
     console.log("transaction (server): ", transaction.contexts);
     return transaction;
   },

@@ -2,6 +2,7 @@
   <div>
     {{ data }}
     <button @click="fetchData">Fetch Data</button>
+    <button @click="fetchRedis">Fetch Redis Data</button>
     <button @click="fetchError">Fetch Server Error</button>
   </div>
 </template>
@@ -15,6 +16,11 @@ const fetchError = async () => {
 
 const fetchData = async () => {
   await useFetch("/api/test-param/123");
+};
+
+const fetchRedis = async () => {
+  const { data: redisData } = await useFetch("/api/redis");
+  data.value = redisData;
 };
 
 const { data } = await useFetch("/api/test-param/123");
