@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     debug: true,
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
-      project: "javascript-nuxt",
+      project: "sigrid-nuxt",
       authToken: process.env.SENTRY_AUTH_TOKEN,
       enabled: true,
     },
