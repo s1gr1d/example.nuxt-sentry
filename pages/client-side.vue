@@ -7,10 +7,12 @@ const id = ref(1);
 </script>
 
 <template>
-  <p>{{ $route.params.param }} - {{ $route.params.param }}</p>
+  <ContentDoc path="/document" />
+  <button @click="nonExistentMethod()">Click me! (non existent method)</button>
   <ErrorButton />
 
   <div>
+    <h2>Fetch Quotes</h2>
     <p>Example of data fetching inside a component:</p>
     <p>
       <button @click="id--">Previous</button> -
