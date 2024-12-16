@@ -39,7 +39,6 @@
     "@sentry/nuxt": "file:.yalc/@sentry/nuxt",
     "@sentry/opentelemetry": "file:.yalc/@sentry/opentelemetry",
     "@sentry/types": "file:.yalc/@sentry/types",
-    "@sentry/utils": "file:.yalc/@sentry/utils",
     "@sentry/vue": "file:.yalc/@sentry/vue"
   }
 }
