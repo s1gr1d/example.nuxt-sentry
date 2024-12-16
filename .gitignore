@@ -2,6 +2,7 @@
 .output*
 .vercel
 .stormkit
+.amplify-hosting
 .data
 .nuxt
 .nitro
@@ -31,3 +32,6 @@ logs
 
 # Local Netlify folder
 .netlify
+
+# Sentry Config File
+.env.sentry-build-plugin
