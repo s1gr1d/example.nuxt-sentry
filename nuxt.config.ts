@@ -21,6 +21,7 @@ export default defineNuxtConfig({
 
   sentry: {
     debug: true,
+    autoInjectServerSentry: 'top-level-import',
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
       project: "sigrid-nuxt",
