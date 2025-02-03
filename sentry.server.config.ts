@@ -11,4 +11,8 @@ Sentry.init({
     console.log("transaction (server): ", transaction.contexts);
     return transaction;
   },
+  beforeSend(event: any) {
+    console.log("Event (server): ", event);
+    return event;
+  },
 });
