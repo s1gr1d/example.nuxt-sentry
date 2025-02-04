@@ -1,7 +1,7 @@
 import * as Sentry from "@sentry/nuxt";
 import dotenv from "dotenv";
 
-dotenv.config();
+console.log("SENTRY INIT server", process.env.SENTRY_DSN);
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
