@@ -3,6 +3,14 @@ import dotenv from "dotenv";
 
 console.log("SENTRY INIT server", process.env.SENTRY_DSN);
 
+declare const context: any;
+
+try{
+  if (context) {
+    context.log("Sentry init server", process.env.SENTRY_DSN);
+  }
+} catch(err) {}
+
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
   tracesSampleRate: 1,
