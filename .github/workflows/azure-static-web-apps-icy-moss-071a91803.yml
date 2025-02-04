@@ -46,7 +46,7 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
         env:
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
-          SENTRY_AUTH_TOKEN: ${{ SENTRY_AUTH_TOKEN }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
