@@ -3,6 +3,7 @@ import { useRuntimeConfig } from "#imports";
 
 console.log('client dsn: ', useRuntimeConfig().public.sentry.dsn);
 
+
 Sentry.init({
   dsn: useRuntimeConfig().public.sentry.dsn,
 
