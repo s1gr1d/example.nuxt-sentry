@@ -10,22 +10,18 @@ import * as Sentry from "@sentry/nuxt";
 var _global = typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 _global.SENTRY_RELEASE = { id: "227b463b4d18c366868f751331f40b6ca30f321c" };
 console.log("SENTRY INIT server", process.env.SENTRY_DSN);
-try {
-  if (context) {
-    context.log("Sentry init server", process.env.SENTRY_DSN);
-  }
-} catch (err) {
-}
+
 Sentry.init({
   dsn: "https://e88b32b2db8229c9b7b693337bd60a12@o447951.ingest.us.sentry.io/4507486945738752",
   tracesSampleRate: 1,
   debug: true,
   beforeSendTransaction(transaction) {
+    console.log('transaction sentry', transaction.transaction);
     return transaction;
   },
   beforeSend(event) {
+    console.log('event sentry', event.transaction);
     return event;
   },
-  enableNitroErrorHandler: false
 });
 //# sourceMappingURL=sentry.server.config.mjs.map
