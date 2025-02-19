@@ -1,4 +1,5 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};;{try{let e="undefined"!="undefined"?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b8afd161-cbe5-4187-be79-263ec1f0f637",e._sentryDebugIdIdentifier="sentry-dbid-b8afd161-cbe5-4187-be79-263ec1f0f637")}catch(e){}};export { X as handle } from './chunks/nitro/nitro.mjs';
+import './sentry.server.config.mjs'
 import 'unified';
 import 'remark-parse';
 import 'remark-rehype';
