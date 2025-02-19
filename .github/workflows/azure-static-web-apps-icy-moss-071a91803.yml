@@ -41,8 +41,9 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           skip_app_build: true  # Skip the build step
-          app_location: ".output-azure/public" # App build output location (because skipping build step)
-          api_location: ".output-azure/server" # Api source code path
+          app_location: ".output-azure" # Point to the root of your build output
+          output_location: "public" # Relative to app_location
+          api_location: "server" # Relative to app_location
           github_id_token: ${{ steps.idtoken.outputs.result }}
         env:
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
