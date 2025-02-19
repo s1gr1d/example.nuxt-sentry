@@ -1,0 +1,26 @@
+{
+  "entryPoint": "handle",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "{*url}",
+      "methods": [
+        "delete",
+        "get",
+        "head",
+        "options",
+        "patch",
+        "post",
+        "put"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
