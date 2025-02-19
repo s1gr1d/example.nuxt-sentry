@@ -20,6 +20,7 @@ import '@sentry/core';
 import '@sentry/node';
 
 const _param_ = defineEventHandler((event) => {
+  console.error("test SENTRY error");
   const param = getRouterParam(event, "param");
   return `Param: ${param}!`;
 });
