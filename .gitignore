@@ -12,6 +12,7 @@ dist
 
 # Node dependencies
 node_modules
+!.output-azure/server/functions/node_modules/
 
 .yarn
 .yalc
