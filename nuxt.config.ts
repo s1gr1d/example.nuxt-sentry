@@ -15,13 +15,13 @@ export default defineNuxtConfig({
     },
   },
 
-  sourcemap: { client: true },
-
+  devtools: { enabled: true },
+  sourcemap: { client: "hidden" },
   modules: ["@sentry/nuxt/module", "@pinia/nuxt", "@nuxt/content"],
 
   sentry: {
     debug: true,
-    autoInjectServerSentry: 'top-level-import',
+    autoInjectServerSentry: "top-level-import",
     sourceMapsUploadOptions: {
       org: "sentry-sdks",
       project: "sigrid-nuxt",

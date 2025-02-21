@@ -40,5 +40,8 @@
     "@sentry/opentelemetry": "file:.yalc/@sentry/opentelemetry",
     "@sentry/types": "file:.yalc/@sentry/types",
     "@sentry/vue": "file:.yalc/@sentry/vue"
+  },
+  "volta": {
+    "node": "20.18.3"
   }
 }

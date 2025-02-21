@@ -1,6 +1,5 @@
 <script setup>
-import Quote from "~/components/Quote.vue";
-import ErrorButton from "~/components/ErrorButton.vue";
+import { Quote, ErrorButton } from "#components";
 import { ref } from "#imports";
 
 const id = ref(1);
@@ -8,8 +7,12 @@ const id = ref(1);
 
 <template>
   <ContentDoc path="/document" />
-  <button @click="nonExistentMethod()">Click me! (non existent method)</button>
-  <ErrorButton />
+  <NuxtErrorBoundary @error="(err) => console.log('hello', err)">
+    <button @click="nonExistentMethod()">
+      Click me! (non existent method)
+    </button>
+    <ErrorButton />
+  </NuxtErrorBoundary>
 
   <div>
     <h2>Fetch Quotes</h2>
