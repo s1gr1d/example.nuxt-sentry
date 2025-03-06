@@ -27,7 +27,8 @@
     "@sentry/nuxt": "9.1.0",
     "dotenv": "^16.4.5",
     "ioredis": "^5.4.1",
-    "nuxt": "3.14.1592"
+    "nuxt": "3.15.4",
+    "vue": "3.5.13"
   },
   "devDependencies": {
     "prettier": "3.3.3"

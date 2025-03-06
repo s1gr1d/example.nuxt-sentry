@@ -6,11 +6,11 @@ Sentry.init({
   dsn: process.env.SENTRY_DSN,
   tracesSampleRate: 1,
   debug: true,
-  beforeSendTransaction(transaction: Sentry.Event) {
-    console.log("transaction (server): ", transaction.contexts);
+  beforeSendTransaction(transaction) {
+    console.log("Transaction (server): ", transaction.contexts);
     return transaction;
   },
-  beforeSend(event: Sentry.Event) {
+  beforeSend(event) {
     console.log("Event (server): ", event.transaction);
     return event;
   },
