@@ -15,6 +15,13 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    "/client-side-only-page": { ssr: false },
+    "/pre-rendered-page": { prerender: true },
+    "/swr-cached-page": { swr: true },
+    "/isr-cached-page": { isr: true },
+  },
+
   devtools: { enabled: true },
   sourcemap: { client: "hidden" },
   modules: ["@sentry/nuxt/module", "@pinia/nuxt", "@nuxt/content"],
