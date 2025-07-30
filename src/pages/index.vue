@@ -6,8 +6,10 @@
   <a href="/cart">Cart</a><br />
 
   <h2>Hybrid Rendering</h2>
-  <a href="/swr-cached-page">SWR Cached Page</a><br />
-  <a href="/isr-cached-page">ISR Cached Page</a><br />
-  <a href="/client-side-only-page">Client Side Only Page</a><br />
-  <a href="/pre-rendered-page">Pre-rendered Page</a><br />
+  <a href="/rendering-modes/client-side-only-page">Client-side Page</a><br />
+  <a href="/rendering-modes/isr-1h-cached-page">ISR 1h Cached Page</a><br />
+  <a href="/rendering-modes/isr-cached-page">ISR Cached Page</a><br />
+  <a href="/rendering-modes/pre-rendered-page">Pre-rendered Page</a><br />
+  <a href="/rendering-modes/swr-cached-page">SWR Cached Page</a><br />
+  <a href="/rendering-modes/swr-1h-cached-page">SWR 1h Cached Page</a><br />
 </template>

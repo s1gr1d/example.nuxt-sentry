@@ -11,11 +11,14 @@
 import { useFetch } from "#imports";
 
 const fetchError = async () => {
-  await useFetch("/api/server-error");
+  await useFetch("/api/server-error", {
+    method: "POST",
+    body: { test: 123 },
+  });
 };
 
 const fetchData = async () => {
-  await useFetch("/api/test-param/123");
+  await useFetch("/api/test-param/123", { body: { test: 123 } });
 };
 
 const fetchRedis = async () => {
@@ -23,5 +26,5 @@ const fetchRedis = async () => {
   data.value = redisData;
 };
 
-const { data } = await useFetch("/api/test-param/123");
+const { data } = await useFetch("/api/test-param/123", { body: { test: 123 } });
 </script>

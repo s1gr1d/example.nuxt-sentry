@@ -23,8 +23,9 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
+    "@nuxtjs/i18n": "10.0.3",
     "@pinia/nuxt": "^0.7.0",
-    "@sentry/nuxt": "9.1.0",
+    "@sentry/nuxt": "9.43.0",
     "dotenv": "^16.4.5",
     "ioredis": "^5.4.1",
     "nuxt": "3.15.4",
