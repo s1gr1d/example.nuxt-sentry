@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     },
   },
 
-  srcDir: "src",
+  srcDir: "app",
 
   routeRules: {
     "/rendering-modes/client-side-only-page": { ssr: false },
