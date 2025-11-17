@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  debug: true,
+  debug: false,
 
   // future: { compatibilityVersion: 4 },
   compatibilityDate: "2024-04-03",

@@ -9,13 +9,25 @@ Sentry.init({
   debug: true,
   tracesSampleRate: 1,
   integrations: [Sentry.piniaIntegration(usePinia())],
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.browserProfilingIntegration(),
+  ],
+  profileSessionSampleRate: 1,
+  profileLifecycle: "manual",
 
-  beforeSendTransaction(transaction) {
-    console.log("Transaction (client)", transaction.transaction);
-    return transaction;
+  beforeSendTransaction(event) {
+    console.log("Event Transaction (contexts): ", event.contexts);
+    return event;
   },
+  beforeSendSpan(span) {
+    console.log("Span (client): ", span);
+
+    return span;
+  },
+
   beforeSend(event) {
-    console.log("Event (client): ", event.transaction);
+    //console.log("Event (client): ", event.transaction);
     return event;
   },
 });

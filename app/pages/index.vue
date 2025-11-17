@@ -1,6 +1,7 @@
 <template>
   <h1>Hello! This is the index page.</h1>
   <a href="/client-side">Client Side</a><br />
+  <a href="/client-profiling">Client Profiling</a><br />
   <a href="/fetch-server-routes">Fetch Server Routes</a><br />
   <a href="/fetch-quote">Fetch Quote</a><br />
   <a href="/cart">Cart</a><br />
